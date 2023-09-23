@@ -11,24 +11,24 @@ const Job = ({ job }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{job_title}</h2>
+        <h2 className="text-sm font-medium md:text-base md:font-semibold">{job_title}</h2>
         <p className="text-sm md:text-base">{company_name}</p>
         <div>
             <button className="px-2.5 py-1.5 md:px-3 text-emerald-400 md:py-2 text-sm md:text-lg font-medium md:font-bold border-2 border-emerald-400 rounded-md mr-4">{remote_or_onsite}</button>
             <button className="px-2.5 py-1.5 md:px-3 md:py-2 text-sm md:text-lg font-medium md:font-bold border-2 border-emerald-400 text-emerald-400 rounded-md">{job_type}</button>
         </div>
-        <div className="flex md:gap-4 justify-between items-center my-1 md:my-2">
-          <div className='flex gap-3 items-center'>
+        <div className="flex-col md:flex-row gap-2 md:gap-4 justify-between items-center my-1 md:my-2">
+          <div className='flex gap-1 md:gap-3 items-center'>
             <RiUserLocationLine className='md:text-xl'></RiUserLocationLine>
-            <p className="text-sm md:text-base font-medium md:font-semibold">{location}</p>
+            <p className="text-xs md:text-base font-normal md:font-semibold">{location}</p>
           </div>
-          <div className='flex gap-3 items-center'>
+          <div className='flex gap-1 md:gap-3 items-center'>
             <RiMoneyDollarBoxLine className='md:text-xl'></RiMoneyDollarBoxLine>
-            <p className="text-sm md:text-base font-medium md:font-semibold">Salary : {salary}</p>
+            <p className="text-xs md:text-base font-normal md:font-semibold">Salary : {salary}</p>
           </div>
         </div>
-        <div className="card-actions">
-          <button className="btn btn-primary">View Details</button>
+        <div className="">
+          <button className="py-2 px-3 md:py-2.5 md:px-4 rounded-md bg-indigo-600 text-white text-xs font-semibold md:text-base md:font-bold">View Details</button>
         </div>
       </div>
     </div>
